@@ -19,3 +19,12 @@ if st.button("Shorten"):
         st.success("Shortened URL: {}".format(shortened))
     else:
         st.warning("Please enter a valid URL.")
+        
+hide_st_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            header {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_st_style, unsafe_allow_html=True)
